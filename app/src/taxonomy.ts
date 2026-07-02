@@ -170,9 +170,7 @@ export const TAXONOMI: KategoriDef[] = [
       {
         id: "ekonomi",
         namn: "Ekonomi",
-        beskrivning: "Resultat, kostnadsutveckling och produktivitet.",
-        planerad: true,
-        exempel: "Resultat mot budget, nettokostnadsutveckling, kostnad per DRG-poäng, köpt vård.",
+        beskrivning: "Verksamhetens kostnader, behovsjusterad kostnadsnivå och produktivitet, jämfört mellan regionerna.",
       },
       {
         id: "kapacitet",

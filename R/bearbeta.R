@@ -20,6 +20,7 @@ source("R/teman/kolada/bearbeta.R")
 source("R/gemensam/ranking-tema.R")
 source("R/teman/folkhalsa/bearbeta.R")
 source("R/teman/befolkning/bearbeta.R")
+source("R/teman/ekonomi/bearbeta.R")
 
 # ══════════════════════════════════════════════
 #  LADDA DATA
@@ -255,6 +256,16 @@ if (length(folkhalsa_sektioner) > 0) {
 befolkning_sektioner <- bearbeta_befolkning()
 if (length(befolkning_sektioner) > 0) {
   resultat$ar$sektioner <- c(befolkning_sektioner, resultat$ar$sektioner)
+}
+
+# ══════════════════════════════════════════════
+#  EKONOMI — Enbart i årsvyn, efter de dagliga sektionerna
+#  (kategorin Resurser & förutsättningar, före Externa rapporter)
+# ══════════════════════════════════════════════
+
+ekonomi_sektioner <- bearbeta_ekonomi()
+if (length(ekonomi_sektioner) > 0) {
+  resultat$ar$sektioner <- c(resultat$ar$sektioner, ekonomi_sektioner)
 }
 
 # ══════════════════════════════════════════════

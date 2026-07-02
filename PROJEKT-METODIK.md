@@ -38,8 +38,11 @@ R/
 │   ├── folkhalsa/
 │   │   ├── config.R             # FoHM: delar = folkhälsopolitikens 8 målområden + hälsoutfall
 │   │   └── bearbeta.R           # Wrapper över gemensam/ranking-tema.R
-│   └── befolkning/
-│       ├── config.R             # SCB/FK/Kolada: demografi, behovsindex, ohälsa
+│   ├── befolkning/
+│   │   ├── config.R             # SCB/FK/Kolada: demografi, behovsindex, ohälsa
+│   │   └── bearbeta.R           # Wrapper över gemensam/ranking-tema.R
+│   └── ekonomi/
+│       ├── config.R             # Kolada: nettokostnad, behovsjusterad avvikelse, DRG
 │       └── bearbeta.R           # Wrapper över gemensam/ranking-tema.R
 ├── gemensam/                    # Delade moduler (inget beroende sinsemellan)
 │   ├── helgdagar.R              # Svensk kalender (röda dagar, klämdagar, skollov)

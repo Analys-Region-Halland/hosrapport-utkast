@@ -68,7 +68,7 @@ Områden är antingen **aktiva** (har data i rapporten) eller **planerade**
 4. **Kvalitet & patientsäkerhet** — *gör vi rätt sak rätt*
    Säker vård & vårdskador · Medicinska resultat (per sjukdomsgrupp/NPO) · Patientupplevelse (NPE) · IVO & patientnämnd
 5. **Resurser & förutsättningar**
-   Personal & bemanning ✓ · Ekonomi · Vårdplatser & kapacitet · Miljö & hållbarhet
+   Personal & bemanning ✓ · Ekonomi ✓ (Kolada/SCB räkenskapssammandrag: nettokostnad, behovsjusterad avvikelse mot referenskostnad, kostnad per vårdform, DRG-produktivitet) · Vårdplatser & kapacitet · Miljö & hållbarhet
 6. **Externa rapporter & ramverk** — *sammanställda existerande ramverk*
    Hälso- och sjukvårdsrapporten (SKR) ✓
 7. **Interna uppföljningsrapporter** — *vår egen uppföljning*
