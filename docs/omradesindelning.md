@@ -59,7 +59,7 @@ Områden är antingen **aktiva** (har data i rapporten) eller **planerade**
 (placeholder med beskrivning av tänkt innehåll):
 
 1. **Behov & befolkning** — *varför vi gör det vi gör*
-   Befolkning & vårdbehov (ACG, demografi) · Folkhälsa & prevention ✓ (FoHM:s indikatorer efter folkhälsopolitikens åtta målområden + hälsoutfall, topp 3-ranking mot övriga län)
+   Befolkning & vårdbehov ✓ (SCB: demografi + kostnadsutjämningens behovsindex, FK: ohälsotal/sjukpenningtal, Kolada: åtgärdbar dödlighet) · Folkhälsa & prevention ✓ (FoHM:s indikatorer efter folkhälsopolitikens åtta målområden + hälsoutfall, topp 3-ranking mot övriga län)
 2. **Tillgänglighet** — *vad vi levererar*
    Vårdgaranti & väntetider (1177, 3-dagarsgaranti, 90 dagar, SVF)
 3. **Vårdens verksamheter** — *hur vi levererar, per vårdform*

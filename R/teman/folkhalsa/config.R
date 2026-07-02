@@ -18,6 +18,13 @@ folkhalsa_tema <- list(
   datakalla   = "data/fohm-folkhalsa.rds",
   fokus_region = "13",    # Hallands län
   riket_id     = "00",
+  kpi_prefix   = "fohm-",
+  jmf_etikett  = "mätning",
+  sektion_intro = function(n_kpi, n_delar) {
+    paste0("Folkhälsokapitlet jämför ", n_kpi,
+           " indikatorer från Folkhälsomyndigheten mellan regionerna,",
+           " indelade efter folkhälsopolitikens målområden.")
+  },
 
   # Delar = folkhälsopolitikens målområden, i propositionens ordning
   # (prop. 2017/18:249), plus hälsoutfall sist. kpier = interna id:n

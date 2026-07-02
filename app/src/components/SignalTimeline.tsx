@@ -429,7 +429,7 @@ function NameCard({ hover }: { hover: Extract<Hover, { kind: "name" }> }) {
       )}
       <div style={{ display: "flex", gap: 14, fontFamily: FONT, fontSize: 10.5, color: "#999", borderTop: "1px solid #f0efeb", paddingTop: 7 }}>
         <span>Enhet: <strong style={{ color: "#666", fontWeight: 600 }}>{enhetText}</strong></span>
-        <span><strong style={{ color: "#666", fontWeight: 600 }}>{kpi.inverterad ? "Lägre är bättre" : "Högre är bättre"}</strong></span>
+        <span><strong style={{ color: "#666", fontWeight: 600 }}>{kpi.utan_mal ? "Utan målriktning" : kpi.inverterad ? "Lägre är bättre" : "Högre är bättre"}</strong></span>
       </div>
     </div>
   );

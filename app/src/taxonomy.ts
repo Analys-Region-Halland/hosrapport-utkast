@@ -55,9 +55,7 @@ export const TAXONOMI: KategoriDef[] = [
       {
         id: "befolkning",
         namn: "Befolkning & vårdbehov",
-        beskrivning: "Demografi, vårdtyngd och sjukdomsbörda i Halland.",
-        planerad: true,
-        exempel: "Befolkningsutveckling per åldersgrupp, ACG-vårdtyngd, sjukdomsförekomst för stora diagnosgrupper.",
+        beskrivning: "Befolkningens sammansättning, förväntade vårdbehov och ohälsa, från SCB, Försäkringskassan och Socialstyrelsen.",
       },
       {
         id: "folkhalsa",

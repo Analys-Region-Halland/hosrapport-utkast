@@ -17,7 +17,9 @@ source("R/gemensam/aggregering.R")
 source("R/gemensam/analystext.R")
 source("R/gemensam/bygg-sektion.R")
 source("R/teman/kolada/bearbeta.R")
+source("R/gemensam/ranking-tema.R")
 source("R/teman/folkhalsa/bearbeta.R")
+source("R/teman/befolkning/bearbeta.R")
 
 # ══════════════════════════════════════════════
 #  LADDA DATA
@@ -240,13 +242,19 @@ for (si in seq_along(resultat$dag$sektioner)) {
 }
 
 # ══════════════════════════════════════════════
-#  FOLKHÄLSA (FoHM) — Enbart i årsvyn, FÖRST i sektionsordningen
-#  (kategorin Behov & befolkning inleder rapporten i taxonomin)
+#  BEFOLKNING & FOLKHÄLSA — Enbart i årsvyn, FÖRST i sektionsordningen
+#  (kategorin Behov & befolkning inleder rapporten i taxonomin;
+#  befolkning före folkhälsa, samma ordning som taxonomin)
 # ══════════════════════════════════════════════
 
 folkhalsa_sektioner <- bearbeta_folkhalsa()
 if (length(folkhalsa_sektioner) > 0) {
   resultat$ar$sektioner <- c(folkhalsa_sektioner, resultat$ar$sektioner)
+}
+
+befolkning_sektioner <- bearbeta_befolkning()
+if (length(befolkning_sektioner) > 0) {
+  resultat$ar$sektioner <- c(befolkning_sektioner, resultat$ar$sektioner)
 }
 
 # ══════════════════════════════════════════════

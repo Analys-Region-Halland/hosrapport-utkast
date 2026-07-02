@@ -35,9 +35,12 @@ R/
 │   ├── kolada/
 │   │   ├── config.R             # Koladas HoS-rapport: sektioner (Koladas indelning), riktning per KPI
 │   │   └── bearbeta.R           # Läser data/kolada-hos.rds, kvartilranking med Halland i fokus
-│   └── folkhalsa/
-│       ├── config.R             # FoHM: delar = folkhälsopolitikens 8 målområden + hälsoutfall
-│       └── bearbeta.R           # Läser data/fohm-folkhalsa.rds, topp 3-ranking med Halland i fokus
+│   ├── folkhalsa/
+│   │   ├── config.R             # FoHM: delar = folkhälsopolitikens 8 målområden + hälsoutfall
+│   │   └── bearbeta.R           # Wrapper över gemensam/ranking-tema.R
+│   └── befolkning/
+│       ├── config.R             # SCB/FK/Kolada: demografi, behovsindex, ohälsa
+│       └── bearbeta.R           # Wrapper över gemensam/ranking-tema.R
 ├── gemensam/                    # Delade moduler (inget beroende sinsemellan)
 │   ├── helgdagar.R              # Svensk kalender (röda dagar, klämdagar, skollov)
 │   ├── signal-modell.R          # GLM + conformal: kor_kpi_signal (produktion), kor_signal (diagnostik)
